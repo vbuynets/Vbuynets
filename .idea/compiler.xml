@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Vbuynet-commons" />
+        <module name="Vbuynet-commons-database" />
+        <module name="Vbuynet-commons-domain" />
+        <module name="Vbuynet-commons-mapper" />
+        <module name="Vbuynet-commons-service" />
+        <module name="Vbuynet-provider-test" />
+        <module name="Vbuynet-service-consumer-login" />
+        <module name="Vbuynet-service-consumer-site" />
+        <module name="Vbuynet-service-gateway" />
+        <module name="Vbuynet-service-provider-login" />
+        <module name="Vbuynet-service-provider-redis" />
+        <module name="Vbuynet-service-provider-site" />
+        <module name="Vbuynet-static-backend" />
+        <module name="Vbuynet-web-admin" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Vbuynet-commons" target="1.8" />
+      <module name="Vbuynet-commons-database" target="1.8" />
+      <module name="Vbuynet-commons-dependencies" target="1.8" />
+      <module name="Vbuynet-commons-domain" target="1.8" />
+      <module name="Vbuynet-commons-mapper" target="1.8" />
+      <module name="Vbuynet-commons-service" target="1.8" />
+      <module name="Vbuynet-provider-test" target="1.8" />
+      <module name="Vbuynet-service-consumer-login" target="1.8" />
+      <module name="Vbuynet-service-consumer-site" target="1.8" />
+      <module name="Vbuynet-service-gateway" target="1.8" />
+      <module name="Vbuynet-service-provider-login" target="1.8" />
+      <module name="Vbuynet-service-provider-redis" target="1.8" />
+      <module name="Vbuynet-service-provider-site" target="1.8" />
+      <module name="Vbuynet-static-backend" target="1.8" />
+      <module name="Vbuynet-web-admin" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Vbuynet-commons" options="-parameters" />
+      <module name="Vbuynet-commons-database" options="-parameters" />
+      <module name="Vbuynet-commons-domain" options="-parameters" />
+      <module name="Vbuynet-commons-mapper" options="-parameters" />
+      <module name="Vbuynet-commons-service" options="-parameters" />
+      <module name="Vbuynet-provider-test" options="-parameters" />
+      <module name="Vbuynet-service-consumer-login" options="-parameters" />
+      <module name="Vbuynet-service-consumer-site" options="-parameters" />
+      <module name="Vbuynet-service-gateway" options="-parameters" />
+      <module name="Vbuynet-service-provider-login" options="-parameters" />
+      <module name="Vbuynet-service-provider-redis" options="-parameters" />
+      <module name="Vbuynet-service-provider-site" options="-parameters" />
+      <module name="Vbuynet-static-backend" options="-parameters" />
+      <module name="Vbuynet-web-admin" options="-parameters" />
+    </option>
+  </component>
+</project>
