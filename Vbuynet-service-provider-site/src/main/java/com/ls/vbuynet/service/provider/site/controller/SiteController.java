@@ -2,7 +2,7 @@ package com.ls.vbuynet.service.provider.site.controller;
 
 import com.ls.vbuynet.commons.domain.Site;
 import com.ls.vbuynet.commons.mapper.SiteMapper;
-import com.ls.vbuynet.service.provider.site.service.VbuynetSiteService;
+import com.ls.vbuynet.service.provider.site.service.VbuynetsSiteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,7 +14,7 @@ public class SiteController {
 
 
     @Autowired
-    private VbuynetSiteService vbuynetSiteService;
+    private VbuynetsSiteService vbuynetSiteService;
 
     @Autowired
     private SiteMapper siteMapper;

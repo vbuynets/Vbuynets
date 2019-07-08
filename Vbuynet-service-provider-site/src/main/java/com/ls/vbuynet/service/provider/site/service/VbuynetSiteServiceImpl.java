@@ -9,13 +9,13 @@ import tk.mybatis.mapper.entity.Example;
 import java.util.List;
 
 @Service
-public class VbuynetSiteServiceImpl implements VbuynetSiteService {
+public class VbuynetSiteServiceImpl implements VbuynetsSiteService {
 
     @Autowired
     private SiteMapper siteMapper;
 
     /**
-     * 新增地址
+     * 新增地址s
      * @param site
      * @return
      */

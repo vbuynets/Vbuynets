@@ -4,7 +4,7 @@ import com.ls.vbuynet.commons.domain.Site;
 
 import java.util.List;
 
-public interface VbuynetSiteService {
+public interface VbuynetsSiteService {
     /**
      * 新增收货地址
      * @param site
