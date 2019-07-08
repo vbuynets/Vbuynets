@@ -85,7 +85,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.ls.vbuynet.service.consumer.site.VbuynetServiceConsumerSiteApplication</mainClass>
+                    <mainClass>com.ls.vbuynet.service.consumer.site.VbuynetsServiceConsumerSiteApplication</mainClass>
                 </configuration>
             </plugin>
         </plugins>

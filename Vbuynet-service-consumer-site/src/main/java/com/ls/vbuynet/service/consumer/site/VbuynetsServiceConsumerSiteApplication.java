@@ -10,9 +10,9 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @SpringBootApplication(scanBasePackages = "com.ls.vbuynet", exclude = {DataSourceAutoConfiguration.class})
 @EnableDiscoveryClient
 @EnableFeignClients
-public class VbuynetServiceConsumerSiteApplication {
+public class VbuynetsServiceConsumerSiteApplication {
     public static void main(String[] args) {
-        SpringApplication.run(VbuynetServiceConsumerSiteApplication.class,args);
+        SpringApplication.run(VbuynetsServiceConsumerSiteApplication.class,args);
     }
 
 }
