@@ -13,9 +13,12 @@
         <module name="Vbuynet-commons-service" />
         <module name="Vbuynet-provider-test" />
         <module name="Vbuynet-service-consumer-login" />
+        <module name="Vbuynet-service-consumer-notice" />
         <module name="Vbuynet-service-consumer-site" />
         <module name="Vbuynet-service-gateway" />
+        <module name="Vbuynet-service-provider-discounts" />
         <module name="Vbuynet-service-provider-login" />
+        <module name="Vbuynet-service-provider-notice" />
         <module name="Vbuynet-service-provider-redis" />
         <module name="Vbuynet-service-provider-site" />
         <module name="Vbuynet-static-backend" />
@@ -31,9 +34,12 @@
       <module name="Vbuynet-commons-service" target="1.8" />
       <module name="Vbuynet-provider-test" target="1.8" />
       <module name="Vbuynet-service-consumer-login" target="1.8" />
+      <module name="Vbuynet-service-consumer-notice" target="1.8" />
       <module name="Vbuynet-service-consumer-site" target="1.8" />
       <module name="Vbuynet-service-gateway" target="1.8" />
+      <module name="Vbuynet-service-provider-discounts" target="1.8" />
       <module name="Vbuynet-service-provider-login" target="1.8" />
+      <module name="Vbuynet-service-provider-notice" target="1.8" />
       <module name="Vbuynet-service-provider-redis" target="1.8" />
       <module name="Vbuynet-service-provider-site" target="1.8" />
       <module name="Vbuynet-static-backend" target="1.8" />
@@ -49,9 +55,12 @@
       <module name="Vbuynet-commons-service" options="-parameters" />
       <module name="Vbuynet-provider-test" options="-parameters" />
       <module name="Vbuynet-service-consumer-login" options="-parameters" />
+      <module name="Vbuynet-service-consumer-notice" options="-parameters" />
       <module name="Vbuynet-service-consumer-site" options="-parameters" />
       <module name="Vbuynet-service-gateway" options="-parameters" />
+      <module name="Vbuynet-service-provider-discounts" options="-parameters" />
       <module name="Vbuynet-service-provider-login" options="-parameters" />
+      <module name="Vbuynet-service-provider-notice" options="-parameters" />
       <module name="Vbuynet-service-provider-redis" options="-parameters" />
       <module name="Vbuynet-service-provider-site" options="-parameters" />
       <module name="Vbuynet-static-backend" options="-parameters" />

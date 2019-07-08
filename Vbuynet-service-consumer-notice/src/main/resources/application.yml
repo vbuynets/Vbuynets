@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: vbuynet-consumer-notice
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.253.1:8848
+
+
+
+
+server:
+  port: 9505
+
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
