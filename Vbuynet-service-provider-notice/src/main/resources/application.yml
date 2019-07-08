@@ -1,0 +1,30 @@
+spring:
+  application:
+    name:  vbuynet-service-notice
+  datasource:
+    druid:
+      url: jdbc:mysql://192.168.43.248:3306/sl?useUnicode=true&characterEncoding=utf-8&useSSL=false
+      username: root
+      password: 123456
+      initial-size: 1
+      min-idle: 1
+      max-active: 20
+      test-on-borrow: true
+      driver-class-name: com.mysql.cj.jdbc.Driver
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.253.1:8848
+
+server:
+  port: 8005
+
+mybatis:
+  type-aliases-package: com.ls.vbuynet.commons.domain
+  mapper-locations: classpath:mapper/*.xml
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
