@@ -2,10 +2,12 @@ package com.ls.vbuynet.service.provider.site.service;
 
 import com.ls.vbuynet.commons.domain.Site;
 import com.ls.vbuynet.commons.mapper.SiteMapper;
+import com.ls.vbuynet.commons.util.CookieUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.entity.Example;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @Service
@@ -13,7 +15,6 @@ public class VbuynetSiteServiceImpl implements VbuynetsSiteService {
 
     @Autowired
     private SiteMapper siteMapper;
-
     /**
      * 新增地址s
      * @param site

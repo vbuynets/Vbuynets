@@ -139,6 +139,31 @@
 								<button type="submit" class="but">保存</button>
 							</div>
 						</div>
+						<script>
+                            $(function() {
+                                let parameter = 1;
+                                $.ajax({
+                                    type: "GET",//请求类型
+                                    url: "http://localhost:9000/api/siteConsumer/getUdai_address/sites",//请求的url
+                                    data: {userid: parameter},//请求参数
+                                    dataType: "json",//ajax接口（请求url）返回的数据类型
+                                    success: function (data) {//data：返回数据（json对象）
+                                        $("#addr-add").html("");
+                                        let options;
+                                        for (let i = 0; i < data.length; i++) {
+                                            options += "<div class=\"addr-item\"><div class=\"tdf1\">data[i].consigneeName</div><div class=\"tdf2 tdt-a_l\">data[i].siteName</div>" +
+                                                "<div class=\"tdf3 tdt-a_l\">data[i].consigneeSize</div><div class=\"tdf1\">data[i].cellphone</div>" +
+                                                "<div class=\"tdf1 order\"><a href=\"udai_address_edit.html\">修改</a><a href=\"\">删除</a></div>" +
+                                                "<div class=\"tdf1\"><a href=\"\" class=\"default active\">默认地址</a><div/></div>";
+                                        }
+                                        $("#addr-add").html(options);
+                                    },
+                                    error: function (data) {//当访问时候，404，500 等非200的错误状态码
+                                        alert("加载平台列表失败33！");
+                                    }
+                                });
+                            });
+						</script>
 						<script src="js/jquery.citys.js"></script>
 						<script src="http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js"></script>
 						<script>
@@ -198,7 +223,7 @@
 						<div class="tdf1">操作</div>
 						<div class="tdf1"></div>
 					</div>
-					<div class="addr-list">
+					<div class="addr-list" id="addr-add">
 						<div class="addr-item">
 							<div class="tdf1">喵喵喵</div>
 							<div class="tdf2 tdt-a_l">福建省 福州市 晋安区</div>
@@ -210,45 +235,6 @@
 							</div>
 							<div class="tdf1">
 								<a href="" class="default active">默认地址</a>
-							</div>
-						</div>
-						<div class="addr-item">
-							<div class="tdf1">喵污喵⑤</div>
-							<div class="tdf2 tdt-a_l">福建省 福州市 仓山区 建新镇</div>
-							<div class="tdf3 tdt-a_l">建新中心小学</div>
-							<!-- <div class="tdf1">350104</div> -->
-							<div class="tdf1">153****7649</div>
-							<div class="tdf1 order">
-								<a href="udai_address_edit.html">修改</a><a href="">删除</a>
-							</div>
-							<div class="tdf1">
-								<a href="" class="default">设为默认</a>
-							</div>
-						</div>
-						<div class="addr-item">
-							<div class="tdf1">taroxd</div>
-							<div class="tdf2 tdt-a_l">福建省 福州市 鼓楼区 鼓东街道</div>
-							<div class="tdf3 tdt-a_l">世界金龙大厦20层B北 福州腾讯企点运营中心</div>
-							<!-- <div class="tdf1">350104</div> -->
-							<div class="tdf1">153****7649</div>
-							<div class="tdf1 order">
-								<a href="udai_address_edit.html">修改</a><a href="">删除</a>
-							</div>
-							<div class="tdf1">
-								<a href="" class="default">设为默认</a>
-							</div>
-						</div>
-						<div class="addr-item">
-							<div class="tdf1">VIPArcher</div>
-							<div class="tdf2 tdt-a_l">福建省 福州市 仓山区 建新镇</div>
-							<div class="tdf3 tdt-a_l">详细地址</div>
-							<!-- <div class="tdf1">350104</div> -->
-							<div class="tdf1">153****7649</div>
-							<div class="tdf1 order">
-								<a href="udai_address_edit.html">修改</a><a href="">删除</a>
-							</div>
-							<div class="tdf1">
-								<a href="" class="default">设为默认</a>
 							</div>
 						</div>
 					</div>

@@ -36,8 +36,8 @@ public class SiteController {
     }
 
     @ResponseBody
-    @GetMapping(value = "sites/{userid}")
-    public String sites(@PathVariable(value = "userid") int userid){
+    @GetMapping(value = "sites")
+    public String sites(@RequestParam(value = "userid") int userid){
       return   siteService.sites(userid);
     }
 
@@ -49,7 +49,7 @@ public class SiteController {
 
     @ResponseBody
     @GetMapping(value = "amend/{id}/{Consigneename}/{siteName}/{consigneeSize}/{cellphone}/{phone}/{defaults}")
-    public String update(Site site,
+    public String update(
                        @PathVariable(value = "id") int id,
                        @PathVariable(value = "Consigneename") String Consigneename,
                        @PathVariable(value = "siteName") String siteName,
@@ -57,6 +57,6 @@ public class SiteController {
                        @PathVariable(value = "cellphone",required = false) int cellphone,
                        @PathVariable(value = "phone",required = false) int phone,
                        @PathVariable(value = "defaults") int  defaults) {
-        return siteService.update(site,id,Consigneename,siteName,consigneeSize,cellphone,phone,defaults);
+        return siteService.update(id,Consigneename,siteName,consigneeSize,cellphone,phone,defaults);
     }
 }

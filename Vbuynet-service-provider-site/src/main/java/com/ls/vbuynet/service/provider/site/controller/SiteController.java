@@ -100,6 +100,7 @@ public class SiteController {
        // int update = siteMapper.amend(id, Consigneename, siteName, consigneeSize, cellphone, phone);
         site = getSite(Consigneename, siteName, consigneeSize, cellphone, phone, defaults);
         site.setId(id);
+        System.out.println(site);
         int update = vbuynetSiteService.updates(site);
         if(update>0){
             return "ok!";

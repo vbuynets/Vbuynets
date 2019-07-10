@@ -58,7 +58,7 @@ public interface SiteService {
      * @return
      */
     @GetMapping(value = "amend/{id}/{Consigneename}/{siteName}/{consigneeSize}/{cellphone}/{phone}/{defaults}")
-    public String update(Site site,
+    public String update(
                          @PathVariable(value = "id") int id,
                          @PathVariable(value = "Consigneename") String Consigneename,
                          @PathVariable(value = "siteName") String siteName,

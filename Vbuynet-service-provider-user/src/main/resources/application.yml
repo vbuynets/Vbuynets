@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: vbuynet-service-provider-user
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.253.1:8848
+  datasource:
+    druid:
+      url: jdbc:mysql://192.168.43.248:3306/sl?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT
+      username: root
+      password: 123456
+      initial-size: 1
+      min-idle: 1
+      max-active: 20
+      test-on-borrow: true
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+
+server:
+  port: 8019
+
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

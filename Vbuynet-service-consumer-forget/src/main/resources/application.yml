@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: vbuynet-service-consumer-forget
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.253.1:8848
+
+
+
+
+server:
+  port: 9516
+
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
